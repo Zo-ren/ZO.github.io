@@ -1,2 +1,0 @@
-![confetti](Pictures/confetti.gif)
-
