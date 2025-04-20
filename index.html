@@ -4,200 +4,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday</title>
-      <link rel="icon" href="PinkMoon.png">
-      <style>
-        @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+  <title>Greetings to You🫵</title>
+  <link rel="icon" href="PinkMoon.png">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
 
-        html,
-        body {
-          width: 100%;
-          height: 100%;
-          scrollbar-width: none;
-          overflow: hidden;
-        }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      scrollbar-width: none;
+      overflow: hidden;
+    }
 
-        .gif-container img {
-          display: none;
-        }
+    .gif-container img {
+      display: none;
+    }
 
-        body.lit-up .gif-container img {
-          display: block;
-        }
+    body.lit-up .gif-container img {
+      display: block;
+    }
 
-        .gif-container {
-          position: absolute;
-          bottom: 0px;
-        }
+    .gif-container {
+      position: absolute;
+      bottom: 0px;
+    }
 
-        .left-gif {
-          bottom: 150px;
-          left: 40px;
+    .left-gif {
+      bottom: 150px;
+      left: 40px;
 
-          img {
-            width: 150px;
-            height: 200px;
-            object-fit: cover;
-          }
-        }
+      img {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
 
-        .right-gif {
-          bottom: 150px;
-          right: 40px;
+    .right-gif {
+      bottom: 150px;
+      right: 40px;
 
-          img {
-            width: 150px;
-            height: 200px;
-            object-fit: cover;
-          }
-        }
+      img {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
 
-        body.lit-up {
-          animation: darkenBackground 2s ease-in-out forwards;
-        }
-
-
-        .name {
-          font-size: 1.1rem;
-          font-weight: 600;
-        }
-
-        #cake {
-          display: block;
-          position: relative;
-          margin: -10em auto 0 auto;
-        }
-
-        .cake {
-          background: #E6F8F6;
-          border-radius: 10px;
-          position: absolute;
-          top: 228px;
-          left: 50%;
-          margin-left: -2.4px;
-          margin-top: -8.33333333px;
-          width: 5px;
-          height: 35px;
-          transform: translateY(-300px);
-          backface-visibility: hidden;
-          animation: in 500ms 6s ease-out forwards;
-        }
-
-        .cake:after,
-        .cake:before {
-          background: rgba(255, 0, 0, 0.4);
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 2.22222222px;
-        }
-
-        .cake:after {
-          top: 25%;
-          left: 0;
-        }
-
-        .cake:before {
-          top: 45%;
-          left: 0;
-        }
-
-        .fuego {
-          border-radius: 100%;
-          position: absolute;
-          top: -20px;
-          left: 50%;
-          margin-left: -2.6px;
-          width: 6.66666667px;
-          height: 18px;
-        }
-
-        body.lit-up .fuego {
-          box-shadow: 0 0 60px 25px rgba(255, 200, 50, 0.897);
-        }
+    body.lit-up {
+      animation: darkenBackground 2s ease-in-out forwards;
+    }
 
 
-        .fuego:nth-child(1) {
-          animation: fuego 2s 6.5s infinite;
-        }
+    .name {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
 
-        .fuego:nth-child(2) {
-          animation: fuego 1.5s 6.5s infinite;
-        }
+    #cake {
+      display: block;
+      position: relative;
+      margin: -10em auto 0 auto;
+    }
 
-        .fuego:nth-child(3) {
-          animation: fuego 1s 6.5s infinite;
-        }
+    .cake {
+      background: #E6F8F6;
+      border-radius: 10px;
+      position: absolute;
+      top: 228px;
+      left: 50%;
+      margin-left: -2.4px;
+      margin-top: -8.33333333px;
+      width: 5px;
+      height: 35px;
+      transform: translateY(-300px);
+      backface-visibility: hidden;
+      animation: in 500ms 6s ease-out forwards;
+    }
 
-        .fuego:nth-child(4) {
-          animation: fuego 0.5s 6.5s infinite;
-        }
+    .cake:after,
+    .cake:before {
+      background: rgba(255, 0, 0, 0.4);
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2.22222222px;
+    }
 
-        .fuego:nth-child(5) {
-          animation: fuego 0.2s 6.5s infinite;
-        }
+    .cake:after {
+      top: 25%;
+      left: 0;
+    }
 
-        @keyframes darkenBackground {
-          from {
-            background-color: #eac6d7;
-          }
+    .cake:before {
+      top: 45%;
+      left: 0;
+    }
 
-          to {
-            background-color: #522a2a;
-          }
-        }
+    .fuego {
+      border-radius: 100%;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      margin-left: -2.6px;
+      width: 6.66666667px;
+      height: 18px;
+    }
 
-        @keyframes fuego {
+    body.lit-up .fuego {
+      box-shadow: 0 0 60px 25px rgba(255, 200, 50, 0.897);
+    }
 
-          0%,
-          100% {
-            background: rgba(254, 248, 97, 0.5);
-            box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
-            transform: translateY(0) scale(1);
-          }
 
-          50% {
-            background: rgba(255, 50, 0, 0.1);
-            box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
-            transform: translateY(-20px) scale(0);
-          }
-        }
+    .fuego:nth-child(1) {
+      animation: fuego 2s 6.5s infinite;
+    }
 
-        @keyframes in {
-          to {
-            transform: translateY(0);
-          }
-        }
+    .fuego:nth-child(2) {
+      animation: fuego 1.5s 6.5s infinite;
+    }
 
-        .text {
-          color: #FFFDFF;
-          font-family: 'Lato', sans-serif;
-          font-weight: 300;
-          font-style: italic;
-          text-align: center;
+    .fuego:nth-child(3) {
+      animation: fuego 1s 6.5s infinite;
+    }
 
-          h1 {
-            font-size: 1.4em;
-          }
-        }
+    .fuego:nth-child(4) {
+      animation: fuego 0.5s 6.5s infinite;
+    }
 
-        .gif {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
-          object-fit: cover;
-          z-index: 0;
-          pointer-events: none;
-          display: none;
-        }
+    .fuego:nth-child(5) {
+      animation: fuego 0.2s 6.5s infinite;
+    }
 
-        .gif:nth-child(1) {
-          top: 50px;
-          left: 50px;
-        }
-      </style>
+    @keyframes darkenBackground {
+      from {
+        background-color: #eac6d7;
+      }
+
+      to {
+        background-color: #412020;
+      }
+    }
+
+    @keyframes fuego {
+
+      0%,
+      100% {
+        background: rgba(254, 248, 97, 0.5);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        background: rgba(255, 50, 0, 0.1);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        transform: translateY(-20px) scale(0);
+      }
+    }
+
+    @keyframes in {
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .text-container {
+      display: none;
+      color: #FFFDFF;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+      z-index: 2;
+    }
+
+    body.lit-up .text-container {
+      display: block;
+      animation: fadeInText 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .gif {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 0;
+      pointer-events: none;
+      display: none;
+    }
+
+    .gif:nth-child(1) {
+      top: 50px;
+      left: 50px;
+    }
+  </style>
 </head>
 
 <body>
@@ -372,9 +386,9 @@
     <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
   </svg>
   <img src="confetti.gif" class="gif" alt="confetti" id="confetti-gif" style="display: none;">
-  <div class="text">
-    <h1>Happy Birthday!</h1>
-    <p class="name">Edea</p>
+  <div class="text-container">
+    <p class="name">Happy Birthday Edea!🌷</p>
+    <p class="text">Wishing you all the best in life it has to offer🥳.</p>
   </div>
   <script>
     function lightCandle() {
@@ -397,7 +411,6 @@
       }, 7000);
     });
   </script>
-
 </body>
 
 </html>
