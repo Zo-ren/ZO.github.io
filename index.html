@@ -215,6 +215,8 @@
 </head>
 
 <body>
+  <audio id="birthdayAudio" src="bdaysound.mp3" preload="auto"></audio>
+
   <div class="gif-container left-gif">
     <img src="YayScream.gif" alt="YayScream">
   </div>
@@ -391,14 +393,21 @@
     <p class="text">Wishing you all the best in life it has to offer🥳.</p>
   </div>
   <script>
+    let audio = document.getElementById('birthdayAudio');
+
     function lightCandle() {
       document.body.classList.add('lit-up');
+      audio.currentTime = 0;
+      audio.play().catch(error => {
+        console.log("Audio playback failed:", error);
+      });
+      
       setTimeout(lightCandle, 7000);
     }
 
     window.addEventListener('load', () => {
       setTimeout(() => {
-        document.body.classList.add('lit-up');
+        lightCandle();
       }, 7000);
     });
 
