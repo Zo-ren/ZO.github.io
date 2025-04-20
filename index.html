@@ -392,16 +392,23 @@
     <p class="name">Happy Birthday Edea!🌷</p>
     <p class="text">Wishing you all the best in life it has to offer🥳.</p>
   </div>
-  <script>
+ <script>
     let audio = document.getElementById('birthdayAudio');
+    let isAudioEnabled = true;
+
+    function enableAudio() {
+      isAudioEnabled = true;
+      document.body.removeEventListener('click', enableAudio);
+    }
 
     function lightCandle() {
       document.body.classList.add('lit-up');
       audio.currentTime = 0;
-      audio.play().catch(error => {
-        console.log("Audio playback failed:", error);
-      });
-      
+      if (isAudioEnabled) {
+        audio.play().catch(error => {
+          console.log("Audio playback failed:", error);
+        });
+      }
       setTimeout(lightCandle, 7000);
     }
 
@@ -410,6 +417,8 @@
         lightCandle();
       }, 7000);
     });
+
+    document.body.addEventListener('click', enableAudio);
 
     document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
